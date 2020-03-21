@@ -1,5 +1,103 @@
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: auto;
+}
+
 .container {
   width: 1170px;
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 580px;
+    max-width: 95%;
+  }
+}
+
+.btn {
+  margin-left: 30px;
+}
+
+.navblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.navblock-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navblock__adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+@media (max-width: 760px) {
+  .navblock__adress {
+    display: none;
+  }
+}
+
+.navblock__contacts {
+  font-size: 13px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.navblock__phone {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.navblock__btn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 19px 30px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #ffd200;
+}
+
+@media (max-width: 367px) {
+  .navblock__btn {
+    font-size: 10px;
+    font-weight: 400;
+    padding: 15px 25px;
+  }
+  .navblock__logo {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
